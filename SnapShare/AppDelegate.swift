@@ -8,16 +8,37 @@
 import UIKit
 import CoreData
 
-@main
-class AppDelegate: UIResponder, UIApplicationDelegate {
 
+
+
+@available(iOS 13.0, *)
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate{
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+
+
+        
+//        GIDSignIn.sharedInstance()?.clientID = "202569116932-2b9p3uhh8pi5e9ff5rkh821hts4fp8m4.apps.googleusercontent.com"
+//        202569116932-2b9p3uhh8pi5e9ff5rkh821hts4fp8m4.apps.googleusercontent.com
         // Override point for customization after application launch.
         return true
     }
-
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        var handled : Bool
+//        handled = GIDSignIn.sharedInstance.handle(url)
+//        if handled{
+//            return true
+//        }
+//        // Handle other custom URL types.
+//
+//        // If not handled by this app, return false.
+//        
+//        return false
+//    }
+ 
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
